@@ -2,7 +2,7 @@
 Backup for the robot manufacturing platforms Klipper firmware configuration
 
 # Updating Toolboards
-To update the two toolboards currently assigned to the FFF toolheads SSH into the pi and run the following commands.
+When updating Klipper through Mainsail, currently the toolboards are not automatically updated at the same time. To update the two toolboards currently assigned to the FFF toolheads SSH into the pi and run the following:
 ```
 cp -f /home/pi/printer_data/config/RoboMFG/toolboards/firmware/fff_head_1/firmware.config /home/pi/klipper/.config
 pushd /home/pi/klipper
