@@ -35,6 +35,3 @@ sudo sed -i 's/^SUBSYSTEMS=="pci", ENV{ID_BUS}="pci".*/SUBSYSTEMS=="pci", ENV{ID
 sudo sed -i '/ENV{MODALIAS}==".*/d' /lib/udev/rules.d/60-serial.rules
 sudo reboot now
 ```
-
-
-Test
