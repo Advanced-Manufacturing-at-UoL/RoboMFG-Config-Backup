@@ -14,9 +14,9 @@ service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32g0b1xx_t0-if00
 chown pi:pi -R /home/pi/klipper
 service klipper start
+sleep 5
 cp -f /home/pi/printer_data/config/additions/firmware/t1/firmware.config /home/pi/klipper/.config
 pushd /home/pi/klipper
-sleep 5
 make olddefconfig
 make clean
 make
