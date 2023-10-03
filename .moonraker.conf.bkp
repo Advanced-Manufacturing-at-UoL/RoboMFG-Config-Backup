@@ -143,6 +143,13 @@ pin = gpio6
 off_when_shutdown = True
 initial_state = on
 
+[update_manager RoboMFG]
+type = git_repo
+primary_branch = main
+path = ~/Robot-MFG-Platform_RatOS-Additions
+origin = https://github.com/Advanced-Manufacturing-at-UoL/Robot-MFG-Platform_RatOS-Additions.git
+managed_services = klipper
+
 [update_manager z_calibration]
 type = git_repo
 path = /home/pi/klipper_z_calibration
